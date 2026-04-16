@@ -1,4 +1,4 @@
-"# Healthcare Symptom Checker
+# Healthcare Symptom Checker
 
 An AI-powered symptom analysis application that helps users understand potential health conditions based on their symptoms. This tool uses Google Gemini AI to provide educational insights and recommendations.
 
