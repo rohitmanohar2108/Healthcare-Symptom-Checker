@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 41 29 12; /* #F9F8F6 in HSL */
+    --foreground: 156 29 15; /* #1C352D */
+    --primary: 150 20 31; /* #3E5C4E */
+    --primary-foreground: 0 0 100; /* #FFFFFF */
+    --secondary: 138 14 91; /* #E3E8E4 */
+    --secondary-foreground: 156 29 15; /* #1C352D */
+    --accent: 38 33 91; /* #F0EAE1 */
+    --destructive: 9 50 59; /* #C86B5E */
+    --muted: 38 33 91; /* #F0EAE1 */
+    --muted-foreground: 164 11 47; /* #6B7C75 */
+    --border: 138 14 91; /* #E3E8E4 */
+    --ring: 150 20 31; /* #3E5C4E */
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-[#F9F8F6] text-[#1C352D] font-['Work_Sans'];
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-['Outfit'];
+  }
+}

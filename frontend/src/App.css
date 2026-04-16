@@ -1,0 +1,88 @@
+.App {
+  min-height: 100vh;
+  background-color: #F9F8F6;
+}
+
+.symptom-input-container {
+  position: relative;
+  background-image: url('https://images.unsplash.com/photo-1760007427513-4679a34e79c8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGdyZWVuJTIwbmF0dXJlJTIwc29mdHxlbnwwfHx8fDE3NzYzNjQ0MzV8MA&ixlib=rb-4.1.0&q=85');
+  background-size: cover;
+  background-position: center;
+}
+
+.symptom-input-overlay {
+  background: rgba(249, 248, 246, 0.95);
+  backdrop-filter: blur(8px);
+}
+
+/* Micro-interactions */
+.btn-primary {
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(62, 92, 78, 0.2);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(62, 92, 78, 0.1);
+}
+
+.nav-link {
+  transition: color 0.2s ease, background-color 0.2s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #3E5C4E;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #3E5C4E;
+}
+
+/* Loading animation */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.loading-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.4s ease-out;
+}
